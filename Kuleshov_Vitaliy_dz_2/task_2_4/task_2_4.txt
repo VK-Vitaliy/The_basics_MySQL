@@ -1,0 +1,8 @@
+Microsoft Windows [Version 10.0.19044.1889]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Windows\system32>cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysqldump --where="true limit 100" mysql help_keyword > dump_help_keyword.sql
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>

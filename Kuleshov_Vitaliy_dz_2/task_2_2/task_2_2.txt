@@ -1,0 +1,18 @@
+
+mysql> CREATE DATABASE example;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use example
+Database changed
+
+mysql> CREATE TABLE users (id INT, name VARCHAR(20));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> describe users;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | YES  |     | NULL    |       |
+| name  | varchar(20) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
