@@ -1,0 +1,22 @@
+mysql
+
+mysql> CREATE DATABASE IF NOT EXISTS sample
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> exit
+Bye
+
+mysqldump example > example.sql
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysql sample < example.sql
+
+mysql> use sample
+Database changed
+mysql> show tables;
++------------------+
+| Tables_in_sample |
++------------------+
+| users            |
++------------------+
+1 row in set (0.00 sec)
