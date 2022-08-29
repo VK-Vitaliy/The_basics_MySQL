@@ -9,7 +9,7 @@ CREATE TABLE user_posts(
 	created_at DATETIME NOT NULL DEFAULT NOW(),
 	updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	FOREIGN KEY (user_id) REFERENCES users (id),
-)
+);
 
 -- создаим таблицу статусов пользователя
 CREATE TABLE user_status(
@@ -31,4 +31,4 @@ CREATE TABLE black_list(
 	PRIMARY KEY (user_id, blocked_user_id),
 	FOREIGN KEY (user_id) REFERENCES users (id),
 	FOREIGN KEY (locked_user_id) REFERENCES users (id)
-)
+);
